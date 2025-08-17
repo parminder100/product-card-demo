@@ -1,45 +1,4 @@
-// import Image from "next/image";
-import { ShoppingCart, Star, Sun, Moon } from 'lucide-react';
-
-// export default function ProductCard({ product }) {
-//   return (
-//     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
-//       <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-md overflow-hidden">
-//         <div className="transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-//           {/* Image */}
-//           <div className="relative w-full h-48">
-//             <Image
-//               src={product.image}
-//               alt={product.title}
-//               width={500}
-//               height={500}
-//               className="w-full object-cover"
-//             />
-//           </div>
-
-//           {/* Content */}
-//           <div className="p-4">
-//             <h3 className="text-lg font-semibold mb-2">{product.title}</h3>
-//             <p className="text-gray-700 dark:text-gray-300 mb-2">
-//               ${product.price}
-//             </p>
-//             <div className="flex items-center mb-3">
-//               ⭐⭐⭐⭐☆ {/* Example rating */}
-//             </div>
-//             <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-//               Add to Cart
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-
-
-
-
+import { ShoppingCart} from 'lucide-react';
 export default function ProductCard({ product }) {
   return (
     <div className="w-full max-w-sm mx-auto hover:shadow-lg">
@@ -78,7 +37,6 @@ export default function ProductCard({ product }) {
 
           {/* Rating and Price */}
           <div className="flex items-center justify-between mb-6">
-            {/* <RatingStars rating={product.rating} /> */}
             ⭐⭐⭐⭐☆
             <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
               ${product.price}

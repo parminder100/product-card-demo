@@ -18,7 +18,7 @@ export default function Home({ products }) {
 
   useEffect(() => {
     const checkWidth = () => {
-      setIsMobileTablet(window.innerWidth <= 660); // <= 1024px => mobile/tablet
+      setIsMobileTablet(window.innerWidth <= 660);
     };
 
     checkWidth(); // initial check
@@ -35,7 +35,7 @@ export default function Home({ products }) {
       </h1>
 
       {/* Centered Product Card */}
-      <div data-testid="product-container" className={`flex gap-[20px] justify-center ${isMobileTablet ? "card-container" : ""}`}>
+      <div data-testid="product-container" className={`sm:flex sm:flex-col md:flex md:flex-col flex flex-row gap-[20px] justify-center ${isMobileTablet ? "card-container" : ""}`}>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
